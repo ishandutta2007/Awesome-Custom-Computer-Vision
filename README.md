@@ -1,165 +1,115 @@
-# Awesome-Custom-Computer-Vision
-
-# Awesome-Custom-Computer-Vision
-
-
-
-**Curated List of SaaS Products & Open-Source GitHub Projects**
-
-*Focused on Custom Model Training, AutoML, Edge Deployment & Annotation Workflows*
-
-**Last updated: October 2026**
-
-
-
-This repository tracks notable **SaaS platforms** and **open-source projects** for **Custom Computer Vision**. These tools help developers and businesses train custom object detection, classification, and segmentation models on their own image datasets—without requiring deep ML expertise.
-
-
-
-**Examples** include Microsoft Custom Vision, Google Cloud AutoML Vision, AWS Rekognition Custom Labels, Roboflow, Clarifai, Landing AI, Edge Impulse, AlwaysAI, Ultralytics HUB, and V7 (the category leaders).
-
-
-
-**Open-source emphasis**: The open-source custom vision ecosystem is **exceptionally mature**, anchored by **Ultralytics YOLO** (industry-standard object detection), **Roboflow Inference** (production-grade self-hosted serving, now free locally), and **NN-GPT** (LLM-driven AutoML from CVPR 2026). **Weights & Biases** provides free experiment tracking for academic research with unlimited tracking and 200GB storage .
-
-
-
-Contributions welcome! Open a PR to add/update entries. Keep descriptions factual and link to official sites.
-
-
-
-## 📖 Table of Contents
-
-
-
-- [☁️ SaaS/Hosted Platforms](#-saas-hosted-platforms)
-
-- [🔓 Open-Source GitHub Projects](#-open-source-github-projects)
-
-- [🤝 How to Contribute](#-how-to-contribute)
-
-- [⚠️ Disclaimer](#-disclaimer)
-
-
-
-## ☁️ SaaS/Hosted Platforms
-
-
-
-> **📊 Market Context**: The global custom computer vision market is estimated at **~$8B in 2026**, growing toward **~$25B by 2032** at a **~21% CAGR**. The sector is **moderately fragmented** — Microsoft, Google, and AWS bundle custom vision as value-adds, while specialized platforms (Roboflow, Ultralytics, Edge Impulse) compete on developer experience and edge deployment. **Critical lifecycle notice**: **Microsoft announced plans to retire Azure Custom Vision** with full support ending **September 25, 2028** . **Pricing varies dramatically**: Microsoft F0 is free with 10K predictions/month , AWS offers 2 free training hours/month , and **Ultralytics Free tier includes 100 models, 100GB storage, and $25 in signup credits** .
-
-
-
-| Platform | Description | Pricing (Starting Tier) | Free Tier Limits | Company Size |
-
-|----------|-------------|------------------------|------------------|--------------|
-
-| **[Microsoft Custom Vision](https://azure.microsoft.com/en-us/services/cognitive-services/custom-vision-service/)** | **Retiring September 25, 2028.** Azure's custom image classification and object detection service. | **F0 (Free)**: 10K predictions/month; **S0 (Standard)**: Unlimited predictions  | **F0 tier**: 2 projects, 5,000 training images/project, 10K predictions/month, 50 tags/project  | **~$281B revenue (Microsoft FY2025)** |
-
-| **[Google Cloud AutoML Vision](https://cloud.google.com/vision)** | Google's custom vision training platform (now Vertex AI). AutoML for image classification and object detection. | **Free version** available; **paid starts at $3.15** per unit  | **Free trial** available; Vertex AI achieved **94.37% accuracy with 1,230 training images** in pill recognition study  | **~$350B revenue (Alphabet FY2025)** |
-
-| **[AWS Rekognition Custom Labels](https://aws.amazon.com/rekognition/custom-labels/)** | AWS custom object detection. Train models to detect business-specific objects and scenes . | **Training hours + inference hours**; exact rates via AWS pricing page  | **Free Tier**: **2 free training hours/month** + **1 free inference hour/month**  | **~$638B revenue (Amazon FY2025)** |
-
-| **[Roboflow](https://roboflow.com/)** | **End-to-end CV platform: dataset management, annotation, training, serverless inference.** | **Serverless API**: Per-image pricing; **Core Plan**: Free tier with **10 credits**  | **Core Free Tier**: **10 credits/month** (~30 model trainings or **80,000 inferences** with RF-DETR Nano)  | **Private (~$80M+ raised)** |
-
-| **[Clarifai](https://www.clarifai.com/)** | AI platform for computer vision, NLP, and custom model training. | **Freemium**: **$1.20/month** usage-based starting price | **Free account**: **1,000 free operations** + **1,000 free inputs per month**  | **Private (~$100M+ raised est.)** |
-
-| **[Landing AI](https://landing.ai/)** | Agentic Document Extraction (ADE) for document processing. | **Explore**: Free with **1,000 credits**; **Team**: Subscription; **Enterprise**: Custom  | **Explore plan**: **1,000 free credits** (expire 90 days after account creation)  | **Private (Andrew Ng-backed)** |
-
-| **[Edge Impulse](https://www.edgeimpulse.com/)** | **Edge AI development platform with AutoML for sensor-based ML on MCUs.** | **Developer Plan**: **Free** (formerly Pro)  | **Developer Plan**: **GPU access**, 60-min training jobs, **3 private projects**, up to **3 collaborators**, **production-ready licensing**  | **Private (~$50M+ raised)** |
-
-| **[AlwaysAI](https://alwaysai.co/)** | Edge AI platform for Python developers. EdgeIQ API abstracts inference complexity. | **Custom pricing** — no public price list as of June 2026  | **Free trial** available on request | **Private (~$50M+ raised est.)** |
-
-| **[Ultralytics HUB](https://hub.ultralytics.com/)** | **Cloud platform for YOLO model training and deployment.** | **Free Plan**: $0; **Pro**: Per-seat subscription  | **Free Plan**: Unlimited public/private projects, **100 models**, 3 concurrent trainings, 3 deployments, **100 GB storage**, **$5 signup credit** ($25 with verified company email)  | **Private (~$20M+ raised est.)** |
-
-| **[V7](https://www.v7labs.com/)** | Darwin training-data platform and V7 Go document automation. | **Sales-led**: Quote per seat/workspace/usage  | **Trial on request** — time-limited evaluation access  | **Private (~$50M+ raised est.)** |
-
-
-
-## 🔓 Open-Source GitHub Projects
-
-
-
-Sorted by star count (descending). Star badge links to each repo's stargazers page.
-
-
-
-| Repo | Description | Stars |
-
-|---|---|---|
-
-| **[Ultralytics YOLO](https://github.com/ultralytics/ultralytics)** — **The industry-standard real-time object detection framework.** YOLOv8/v11/v12 with training, validation, prediction, and export to 17+ formats. **Achieved 80.83% accuracy with 26,880 images** in pill recognition study . AGPL-3.0 (commercial license available). | [![Stars](https://img.shields.io/github/stars/ultralytics/ultralytics?style=social&color=white)](https://github.com/ultralytics/ultralytics/stargazers) | ~35,000 |
-
-| **[Roboflow Inference](https://github.com/roboflow/inference)** — **Self-hosted, production-grade CV model serving.** **Now free for local use** on any plan . Supports RF-DETR, YOLO, SAM, and custom models. Apache-2.0. | [![Stars](https://img.shields.io/github/stars/roboflow/inference?style=social&color=white)](https://github.com/roboflow/inference/stargazers) | ~2,000 |
-
-| **[NN-GPT](https://github.com/ABrain-One/NN-GPT)** — **LLM-driven AutoML for neural network development (CVPR 2026).** Turns an LLM into a closed-loop AutoML system. NN-RAG attains **73% executability** on 1,289 targets. Generated **over 10,000 trained models** . | [![Stars](https://img.shields.io/github/stars/ABrain-One/NN-GPT?style=social&color=white)](https://github.com/ABrain-One/NN-GPT/stargazers) | ~1,000 |
-
-| **[Weights & Biases](https://github.com/wandb/wandb)** — **ML experiment tracking, model registry, and AI application evaluation.** **Free forever for academic research**: unlimited tracking, teams, projects, and **200GB cloud storage** . | [![Stars](https://img.shields.io/github/stars/wandb/wandb?style=social&color=white)](https://github.com/wandb/wandb/stargazers) | ~10,000 |
-
-| **[Visionset](https://github.com/visionset/visionset)** — **Open-source computer vision dataset management.** Project creation, schema application, batch ingestion, annotation, release publishing with train/val/test splits, and export to YOLO11, COCO, VOC formats. CLI, SDK, REST API, and MCP server (56 agent tools) . | [![Stars](https://img.shields.io/github/stars/visionset/visionset?style=social&color=white)](https://github.com/visionset/visionset/stargazers) | ~500 |
-
-| **[AndroGen](https://github.com/AndroGen/AndroGen)** — **Open-source synthetic data generation for automated sperm analysis.** Generates realistic labelled datasets without real images or generative training models. Customizable cell morphology and movement parameters . | [![Stars](https://img.shields.io/github/stars/AndroGen/AndroGen?style=social&color=white)](https://github.com/AndroGen/AndroGen/stargazers) | ~100 |
-
-
-
-**Additional open-source options worth exploring:**
-
-
-
-| Repo | Description |
-
-|---|---|
-
-| **[Label Studio](https://github.com/HumanSignal/label-studio)** — Open-source data labeling for vision, text, and audio. Apache-2.0. |
-
-| **[CVAT](https://github.com/opencv/cvat)** — Computer Vision Annotation Tool. Mature image/video labeling with auto-annotation. MIT. |
-
-| **[FiftyOne](https://github.com/voxel51/fiftyone)** — Dataset curation, visualization, and model debugging for vision. Apache-2.0. |
-
-| **[Detectron2](https://github.com/facebookresearch/detectron2)** — Facebook AI's detection and segmentation library. Apache-2.0. |
-
-| **[MMDetection](https://github.com/open-mmlab/mmdetection)** — OpenMMLab's detection toolbox. 50+ pre-trained models. Apache-2.0. |
-
-
-
-## 🤝 How to Contribute
-
-
-
-1. Fork the repo.
-
-2. Add/edit entries in `README.md` (follow existing format).
-
-3. Include: name, link, 1–2 sentence description, and whether it's SaaS or open-source.
-
-4. Submit PR with a short explanation.
-
-
-
-Star the repo if you find it useful!
-
-
-
-## ⚠️ Disclaimer
-
-
-
-- This is a **community-curated** list — not exhaustive and not an endorsement.
-
-- Custom computer vision platforms handle potentially sensitive image data; ensure compliance with privacy regulations and obtain proper consent for face or personal data processing.
-
-- **Critical lifecycle notice**: **Microsoft announced plans to retire Azure Custom Vision** with full support ending **September 25, 2028** . Users should plan migration to alternatives.
-
-- **Open-source reality**: The open-source ecosystem for custom computer vision is **exceptionally mature**. **Ultralytics YOLO** is the industry-standard object detection framework, achieving **80.83% accuracy** in independent benchmarks . **Roboflow Inference** provides production-grade self-hosted model serving, now **free locally** . **NN-GPT** (CVPR 2026) demonstrates LLM-driven AutoML generating **over 10,000 trained models** . **Weights & Biases** offers **free academic research licenses** with 200GB storage . However, **commercial platforms** (Roboflow, Ultralytics HUB, Edge Impulse) provide **managed training infrastructure, annotation tools, and deployment pipelines** that open-source alternatives require significant setup to match. The open-source path is **genuinely viable** for organizations with ML engineering capacity.
-
-- **Pricing caveat**: All pricing figures above are **verified against cited search results** but may change without notice. **Microsoft F0 free tier** caps at **10K predictions/month** . **Clarifai free tier** provides **1,000 operations + 1,000 inputs/month** . Always check the provider's official page for current terms.
-
-
+<p align="center">
+  <img src="assets/banner.svg" alt="Awesome Custom Computer Vision Banner" width="100%"/>
+</p>
+
+# 👁️ Awesome Custom Computer Vision 🚀
+
+<p align="center">
+  <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a><a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Custom-Computer-Vision/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Custom-Computer-Vision?style=flat-square" alt="GitHub Stars"/></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Custom-Computer-Vision/network/members"><img src="https://img.shields.io/github/forks/ishandutta2007/Awesome-Custom-Computer-Vision?style=flat-square" alt="GitHub Forks"/></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Custom-Computer-Vision/blob/main/LICENSE"><img src="https://img.shields.io/github/license/ishandutta2007/Awesome-Custom-Computer-Vision?style=flat-square" alt="License"/></a>
+  <a href="https://github.com/ishandutta2007"><img alt="GitHub followers" src="https://img.shields.io/github/followers/ishandutta2007?label=Follow" /></a>
+</p>
 
 ---
 
+## 📌 Curated List of Custom Computer Vision SaaS Products & Open-Source Tools 💡
 
+*Focused on Custom Model Training, Object Detection, Dataset Annotation, AutoML & Edge AI Deployment Workflows*
 
-**Made for ML engineers, computer vision developers, data scientists, and AI product teams.**
+**Last updated: October 2026**
 
-Let's make custom computer vision more open, transparent, and accessible.
+This repository tracks top **SaaS platforms** and **open-source GitHub projects** for **Custom Computer Vision**. These tools empower developers, machine learning engineers, and businesses to build, annotate, and train custom object detection, image classification, and instance segmentation models on proprietary datasets without needing complex ML infrastructure setup.
+
+---
+
+## 📖 Table of Contents 🔍
+
+- [☁️ SaaS/Hosted Platforms](#️-saashosted-platforms)
+- [🔓 Open-Source GitHub Projects](#-open-source-github-projects)
+- [🤝 How to Contribute](#-how-to-contribute)
+- [☕ Support & Community](#-support--community)
+- [📈 Star History](#-star-history)
+- [⚠️ Disclaimer](#️-disclaimer)
+
+---
+
+## ☁️ SaaS/Hosted Platforms 🌐
+
+> **📊 Market Size & Dynamics**: The global custom computer vision market is estimated at **~$8B in 2026**, projected to grow to **~$25B by 2032** at a **~21% CAGR**. The sector is **moderately fragmented** — tech giants like Amazon, Google, and Microsoft offer custom vision bundled into cloud ecosystems, while specialized vendors (Roboflow, Ultralytics HUB, Landing AI, Edge Impulse) compete aggressively on annotation tools, developer experience, and edge deployment efficiency.
+> 
+> **⚠️ Critical Lifecycle Notice**: Microsoft has announced plans to **retire Azure Custom Vision**, with full support ending on **September 25, 2028**.
+
+| Platform | Description | Pricing (Starting Tier) | Free Tier Limits | Company Size / Revenue / Valuation |
+|:---|:---|:---|:---|:---|
+| **[AWS Rekognition Custom Labels](https://aws.amazon.com/rekognition/custom-labels/)** | AWS custom object detection & scene classification. | **$1.00/hour** for training & **$4.00/hour** for inference | **2 free training hours/month** + **1 free inference hour/month** (12-month trial) | **~$638B revenue** (Amazon FY2025) |
+| **[Google Cloud AutoML Vision](https://cloud.google.com/vision)** | Google Vertex AI custom vision training & image processing. | **$3.15/hour** for training node usage | **1,000 free operations/month** + **$300 new user GCP credits** | **~$350B revenue** (Alphabet FY2025) |
+| **[Microsoft Custom Vision](https://azure.microsoft.com/en-us/services/cognitive-services/custom-vision-service/)** | **Retiring Sept 25, 2028.** Azure's custom image classification service. | **$2.00 per 1,000 transactions** (Standard S0 tier) | **F0 Free Tier**: 2 projects, 5,000 training images/project, **10,000 predictions/month** | **~$281B revenue** (Microsoft FY2025) |
+| **[Clarifai](https://www.clarifai.com/)** | AI platform for computer vision, custom model training, and LLMs. | **$1.20/month** usage-based baseline | **Free Account**: 1,000 free operations + **1,000 free image inputs/month** | **~$100M+ valuation** (Private) |
+| **[Roboflow](https://roboflow.com/)** | End-to-end CV platform for labeling, model training, and web/edge APIs. | **$249/month** (Starter Plan) | **Core Free Tier**: **10 credits/month** (~30 trainings or 80k RF-DETR inferences) | **~$80M+ valuation** (Private) |
+| **[Edge Impulse](https://www.edgeimpulse.com/)** | Edge AI & AutoML platform for deploying custom CV on microcontrollers. | **$39/month** (Enterprise developer seat add-on) | **Developer Free Plan**: GPU access, 60-min jobs, **3 private projects**, up to 3 collaborators | **~$50M+ valuation** (Private) |
+| **[V7](https://www.v7labs.com/)** | V7 Darwin automated image/video dataset annotation and model training. | **$119/month** (Starter Plan) | **14-day free trial** with 1,000 auto-annotation credits | **~$50M+ valuation** (Private) |
+| **[AlwaysAI](https://alwaysai.co/)** | Edge AI development platform with EdgeIQ Python library. | **$99/month** (Developer Plan) | **14-day free trial** with 1 local edge deployment slot | **~$50M+ valuation** (Private) |
+| **[Ultralytics HUB](https://hub.ultralytics.com/)** | Cloud platform for YOLO model training, dataset sync, and deployment. | **$29/month** (Pro Plan) | **Free Plan**: Unlimited projects, **100 models**, 100GB storage, $5-$25 signup credits | **~$20M+ valuation** (Private) |
+| **[Landing AI](https://landing.ai/)** | LandingLens & Agentic Document Extraction for domain-specific vision. | **$19/month** (Pay-as-you-go Plan) | **Explore Free Plan**: **1,000 free credits** (valid for 90 days) | **Private** (Andrew Ng-backed) |
+
+---
+
+## 🔓 Open-Source GitHub Projects ⚡
+
+Sorted by star count (descending). Star badge links directly to each repo's stargazers page.
+
+| Repo | Description | Stars Badge | Star Count |
+|:---|:---|:---:|:---:|
+| **[Ultralytics YOLO](https://github.com/ultralytics/ultralytics)** | Industry-standard real-time object detection, segmentation & pose estimation framework (YOLOv8/v11/v12). | [![Stars](https://img.shields.io/github/stars/ultralytics/ultralytics?style=social&color=white)](https://github.com/ultralytics/ultralytics/stargazers) | ~35,000 |
+| **[Label Studio](https://github.com/HumanSignal/label-studio)** | Multi-modal data labeling tool for image classification, bounding boxes, segmentation, audio, and text. | [![Stars](https://img.shields.io/github/stars/HumanSignal/label-studio?style=social&color=white)](https://github.com/HumanSignal/label-studio/stargazers) | ~22,500 |
+| **[CVAT](https://github.com/cvat-ai/cvat)** | Computer Vision Annotation Tool — digital image and video annotation platform with automatic AI labeling. | [![Stars](https://img.shields.io/github/stars/cvat-ai/cvat?style=social&color=white)](https://github.com/cvat-ai/cvat/stargazers) | ~15,000 |
+| **[Detectron2](https://github.com/facebookresearch/detectron2)** | Meta AI's next-generation research platform for object detection and instance segmentation algorithms. | [![Stars](https://img.shields.io/github/stars/facebookresearch/detectron2?style=social&color=white)](https://github.com/facebookresearch/detectron2/stargazers) | ~29,000 |
+| **[MMDetection](https://github.com/open-mmlab/mmdetection)** | OpenMMLab's modular object detection toolbox supporting 50+ computer vision detection algorithms. | [![Stars](https://img.shields.io/github/stars/open-mmlab/mmdetection?style=social&color=white)](https://github.com/open-mmlab/mmdetection/stargazers) | ~28,000 |
+| **[FiftyOne](https://github.com/voxel51/fiftyone)** | Open-source tool for building high-quality computer vision datasets and visualizing model predictions. | [![Stars](https://img.shields.io/github/stars/voxel51/fiftyone?style=social&color=white)](https://github.com/voxel51/fiftyone/stargazers) | ~9,500 |
+| **[Weights & Biases](https://github.com/wandb/wandb)** | ML experiment tracking, dataset versioning, model registry, and evaluation framework for computer vision. | [![Stars](https://img.shields.io/github/stars/wandb/wandb?style=social&color=white)](https://github.com/wandb/wandb/stargazers) | ~10,000 |
+| **[Roboflow Inference](https://github.com/roboflow/inference)** | Self-hosted production inference server for deploying vision models (YOLO, SAM, RF-DETR) locally or on cloud. | [![Stars](https://img.shields.io/github/stars/roboflow/inference?style=social&color=white)](https://github.com/roboflow/inference/stargazers) | ~2,000 |
+| **[NN-GPT](https://github.com/ABrain-One/NN-GPT)** | LLM-driven AutoML for neural network code generation and training automation (CVPR 2026). | [![Stars](https://img.shields.io/github/stars/ABrain-One/NN-GPT?style=social&color=white)](https://github.com/ABrain-One/NN-GPT/stargazers) | ~1,000 |
+| **[Visionset](https://github.com/visionset/visionset)** | Computer vision dataset management, schema creation, annotation export, and MCP server for AI agents. | [![Stars](https://img.shields.io/github/stars/visionset/visionset?style=social&color=white)](https://github.com/visionset/visionset/stargazers) | ~500 |
+| **[AndroGen](https://github.com/AndroGen/AndroGen)** | Open-source synthetic data generator for computer vision model training and domain-specific dataset generation. | [![Stars](https://img.shields.io/github/stars/AndroGen/AndroGen?style=social&color=white)](https://github.com/AndroGen/AndroGen/stargazers) | ~100 |
+
+---
+
+## 🤝 How to Contribute 🛠️
+
+Contributions are warmly welcome! Help us expand and maintain this list of custom computer vision tools:
+
+1. **Fork** this repository.
+2. Add or update entries in `README.md` following the exact table structure.
+3. Ensure links, pricing, and GitHub star count badges are accurate.
+4. Open a **Pull Request** with a descriptive title.
+
+Check out our curated list of awesome lists: [Awesome-Awesome-Awesome](https://github.com/ishandutta2007/Awesome-Awesome-Awesome) 🌟
+
+---
+
+## ☕ Support & Community ❤️
+
+If this repository helped you find the right custom vision platform or open-source tool, please consider starring ⭐, sharing, or supporting the project!
+
+- ⭐ **Star this repository** to help others discover it.
+- 🔄 **Fork & Share** with fellow ML developers & computer vision engineers.
+- 💬 Join our developer discussions on **[Discord](https://discord.gg/jc4xtF58Ve)**.
+- ☕ **Sponsor & Buy a Coffee**: If you'd like to support ongoing open-source curation, visit the [GitHub Sponsor Dashboard](https://github.com/sponsors/ishandutta2007).
+
+Thank you for your support! 🚀
+
+---
+
+## 📈 Star History 📊
+
+[![Star History Chart](https://star-history.dera.page/svg?repos=ishandutta2007/Awesome-Custom-Computer-Vision&type=date&legend=top-left)](https://star-history.dera.page/#ishandutta2007/Awesome-Custom-Computer-Vision&type=date&legend=top-left)
+
+---
+
+## ⚠️ Disclaimer 📜
+
+- This repository is community-curated for informational purposes only and does not constitute an endorsement.
+- All product names, logos, and brands are property of their respective owners.
+- Pricing details, free tier limits, and corporate valuations are subject to change. Always verify terms on vendor websites.
