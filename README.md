@@ -6,7 +6,7 @@
 
 <p align="center">
   <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a><a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
-  <a href="https://github.com/ishandutta2007/Awesome-Custom-Computer-Vision/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Custom-Computer-Vision?style=flat-square" alt="GitHub Stars"/></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Custom-Computer-Vision/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Custom-Computer-Vision?style=flat-square" alt="GitHub_Stars"/></a>
   <a href="https://github.com/ishandutta2007/Awesome-Custom-Computer-Vision/network/members"><img src="https://img.shields.io/github/forks/ishandutta2007/Awesome-Custom-Computer-Vision?style=flat-square" alt="GitHub Forks"/></a>
   <a href="https://github.com/ishandutta2007/Awesome-Custom-Computer-Vision/blob/main/LICENSE"><img src="https://img.shields.io/github/license/ishandutta2007/Awesome-Custom-Computer-Vision?style=flat-square" alt="License"/></a>
   <a href="https://github.com/ishandutta2007"><img alt="GitHub followers" src="https://img.shields.io/github/followers/ishandutta2007?label=Follow" /></a>
@@ -58,9 +58,9 @@ This repository tracks top **SaaS platforms** and **open-source GitHub projects*
 
 ## 🔓 Open-Source GitHub Projects ⚡
 
-Sorted by star count (descending). Star badge links directly to each repo's stargazers page.
+Sorted by Stars_Count (descending). Stars_Badge links directly to each repo's stargazers page.
 
-| Repo | Description | Stars Badge | Star Count |
+| Repo | Description | Stars_Badge | Stars_Count |
 |:---|:---|:---:|:---:|
 | **[Ultralytics YOLO](https://github.com/ultralytics/ultralytics)** | Industry-standard real-time object detection, segmentation & pose estimation framework (YOLOv8/v11/v12). | [![Stars](https://img.shields.io/github/stars/ultralytics/ultralytics?style=social&color=white)](https://github.com/ultralytics/ultralytics/stargazers) | ~35,000 |
 | **[Label Studio](https://github.com/HumanSignal/label-studio)** | Multi-modal data labeling tool for image classification, bounding boxes, segmentation, audio, and text. | [![Stars](https://img.shields.io/github/stars/HumanSignal/label-studio?style=social&color=white)](https://github.com/HumanSignal/label-studio/stargazers) | ~22,500 |
@@ -82,7 +82,7 @@ Contributions are warmly welcome! Help us expand and maintain this list of custo
 
 1. **Fork** this repository.
 2. Add or update entries in `README.md` following the exact table structure.
-3. Ensure links, pricing, and GitHub star count badges are accurate.
+3. Ensure links, pricing, and GitHub Stars_Count badges are accurate.
 4. Open a **Pull Request** with a descriptive title.
 
 Check out our curated list of awesome lists: [Awesome-Awesome-Awesome](https://github.com/ishandutta2007/Awesome-Awesome-Awesome) 🌟
